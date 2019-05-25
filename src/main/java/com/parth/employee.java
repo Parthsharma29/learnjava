@@ -21,7 +21,7 @@ employee(String firstname1 ,String lastname, String d_o_b,String joiningdate,Str
 }
 
 public static void main(String[] args) {
-    employee emp=new employee("abc", "xyz", "ddd", "29/11/1654", "it");
+    employee emp=new employee("abc", "xyz", "ddd", "29/11/1654", "it");  
     System.out.println(emp);
 }
  public String toString(){
