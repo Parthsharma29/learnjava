@@ -1,5 +1,4 @@
-
-
+package com.parth;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,10 +11,13 @@ public class Randomnew{
     Random r = new Random();
     int n= r.nextInt(8);
     System.out.println(n);
+    int count=0;
+   
    
 
 
-    for(int i=0;i<10;i++){
+    while(true){
+    	count++;
         System.out.println("enter the guess");
         Scanner sc=new Scanner(System.in);
         int c= sc.nextInt();
@@ -31,8 +33,9 @@ public class Randomnew{
         System.out.println("u guessed it right");
         break;
     }
-    
-}
-    }
+   }
+    System.out.println("no of tries"+count);
+
 
  }
+}
